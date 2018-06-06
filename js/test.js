@@ -10,7 +10,7 @@ function fn() {
         };
         $.ajax({
             type: "POST",
-            url: "http://jx-staging-britecore-mock-project",
+            url: "http://jx-staging-britecore-mock-project.jx-staging.35.203.42.186.nip.io",
             data: data,
             async: true,
             contentType: "application/json",
