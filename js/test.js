@@ -8,9 +8,27 @@ function fn() {
         var data = {
             'title': 'geoff'
         };
+        $.ajax({
+            type: "POST",
+            url: "http://jx-staging-britecore-mock-project",
+            data: data,
+            async: true,
+            contentType: "application/json",
+            crossDomain: true,
+            success: function(ret){
+                alert("success");
+            },
+            error: function(XMLHttpRequest, textStatus, errorThrown){
+                console.log(XMLHttpRequest);
+                console.log(textStatus);
+                console.log(errorThrown);
+            }
+        });
+        /*
         $.post("http://jx-staging-britecore-mock-project", data, function(ret) {
             console.log(ret);
         });
+        */
     };
 }
 
