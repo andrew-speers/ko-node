@@ -1,20 +1,27 @@
 <!doctype html>
 <html>
-<head>
-  <!-- Javascript -->
-  <script src="js/head.js" type="text/javascript"></script>
-  <script type="text/javascript">
-    // loading my scripts
-    head.js(
-    {jquery: "js/jquery.js"},
-    {knockout: "js/knockout.js"},
-    "js/app.js");
-  </script>
-</head>
-<!-- /Javascript -->
-	<body>
-			<img border="0" src="https://jenkins-x.io/images/logo.png" width="300" height="300" />
-			<h2>Hello Node from Jenkins X</h2>
-</div>
-	</body>
+  <head>
+    <!-- Javascript -->
+    <script src="js/head.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      // loading my scripts
+      head.js(
+      {jquery: "js/jquery.js"},
+      {knockout: "js/knockout.js"},
+      "js/test.js");
+    </script>
+  </head>
+  <!-- /Javascript -->
+  <body>
+    <img border="0" src="https://jenkins-x.io/images/logo.png" width="300" height="300" />
+    <h2>Hello Node from Jenkins X</h2>
+
+    <p>Title: <input data-bind="value: title"/></p>
+    <p>Description: <input data-bind="value: desc"/></p>
+    <p>Client Priority: <input data-bind="value: prior"/></p>
+    <p>Target Date: <input data-bind="value: date"/></p>
+
+    <strong data-bind="text: date"></strong>
+
+  </body>
 </html>
